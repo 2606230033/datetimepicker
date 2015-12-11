@@ -216,21 +216,6 @@ ss(秒), ii(分), hh(小时), HH(小时), dd(天), mm(月),代表不足两位数
 
 设置时间选择器初始化的时间值，默认情况下是现在，你可以指定其他时间，`initialDate` 接受 `Date` | `String`， 默认值为: `new Date()`。
 
-### onRender
-
-渲染日历时调用的函数，比如 `.disabled` 设置禁用日期。
-
-```javascript
-var nowTemp = new Date();
-var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
-$('#date-end')
-  .datetimepicker({
-    onRender: function(date) {
-      return date.valueOf() < now.valueOf() ? 'disabled' : '';
-    }
-  });
-```
-
 **组件结合**
 
 ```html
@@ -300,7 +285,7 @@ $('#datetimepicker').datetimepicker('update');
 
 ### `setStartDate`
 
-设置开始时间，小于开始时间的则不能选中并设置 `disabled`，`setStartDate` 接受：`String` 值。
+设置开始时间，小于开始时间的将被禁用，`setStartDate` 接受：`String` 值。
 
 ```javascript
 $('#datetimepicker').datetimepicker('setStartDate', '2015-01-01');
@@ -315,7 +300,7 @@ $('#datetimepicker').datetimepicker('setStartDate', null);
 
 ### `setEndDate`
 
-设置结束时间，大于结束时间的则不能选中并设置 `disabled` ，`setEndDate` 接受：`String` 值。
+设置结束时间，大于结束时间的将被禁用，`setEndDate` 接受：`String` 值。
 
 ```javascript
 $('#datetimepicker').datetimepicker('setEndDate', '2014-12-31');
