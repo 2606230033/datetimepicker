@@ -5,6 +5,40 @@
 
 ## [使用演示](http://amazeui.github.io/datetimepicker/docs/demo.html)
 
+## 使用说明
+
+
+**使用说明：**
+
+1. 获取 Amaze UI Datetime Picker
+
+  - [直接下载](https://github.com/amazeui/datetimepicker/archive/master.zip)
+
+2. 引入 Datetime Picker 样式（`css` 目录下）以及 Amaze UI 样式：
+
+  ```html
+  <link rel="stylesheet" href="path/to/amazeui.min.css"/>
+  <link rel="stylesheet" href="path/to/amazeui.datetimepicker.css"/>
+  ```
+
+3. 引入 jQuery 相关文件及 Datetime Picker JS 文件（下载包 `js` 目录下）：
+
+  ```html
+  <script src="path/to/jquery.min.js"></script>
+  <script src="path/to/amazeui.datetimepicker.min.js"></script>
+  ```
+
+4. 初始化 Datetime Picker:
+
+  ```html
+  <input type="text" value="2015-02-15 21:05" id="datetimepicker" class="am-form-field">
+  ```
+  ```javascript
+  $('#datetimepicker').datetimepicker({
+    format: 'yyyy-mm-dd hh:ii'
+  });
+  ```
+
 ## 调用方法
 
 **设置时间格式：`format` 选项**

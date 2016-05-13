@@ -9,4 +9,5 @@ gulpfile.js
 .gitignore
 .jshintrc
 .npmignore
+.publish
 bower.json

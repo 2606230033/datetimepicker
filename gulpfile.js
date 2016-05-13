@@ -11,8 +11,8 @@ var del = require('del');
 var runSequence = require('run-sequence');
 var reload = browserSync.reload;
 
-gulp.task('clean', function(cb) {
-  del('dist', cb);
+gulp.task('clean', function() {
+  return del('dist');
 });
 
 
@@ -54,25 +54,8 @@ gulp.task('less', function() {
     .pipe(gulp.dest('./css'));
 });
 
-gulp.task('bundle', function() {
-  var bundler = transform(function(filename) {
-    var b = browserify({
-      entries: filename,
-      basedir: './'
-    });
-    return b.bundle();
-  });
-
-  gulp.src('test/main.js')
-    .pipe(bundler)
-    .pipe($.rename({
-      basename: 'bundle'
-    }))
-    .pipe(gulp.dest('test'))
-});
-
 // Watch Files For Changes & Reload
-gulp.task('serve', ['default'], function () {
+gulp.task('dev', ['default'], function () {
   browserSync({
     notify: false,
     server: 'dist',
