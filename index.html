@@ -11,13 +11,13 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="Cache-Control" content="no-siteapp"/>
   <link rel="icon" type="image/png"
-        href="http://a.static.amazeui.org/assets/i/favicon.png">
+        href="http://s.amazeui.org/assets/2.x/i/favicon.png">
   <link rel="stylesheet"
-        href="http://cdn.amazeui.org/amazeui/2.1.0/css/amazeui.min.css">
-  <link rel="stylesheet" href="http://a.static.amazeui.org/assets/plugin/css/app.min.css">
+        href="http://cdn.amazeui.org/amazeui/2.6.2/css/amazeui.min.css">
+  <link rel="stylesheet" href="http://s.amazeui.org/assets/plugin/css/app.min.css">
   <!--[if (gte IE 9)|!(IE)]><!-->
-  <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
-  <script src="http://cdn.amazeui.org/amazeui/2.1.0/js/amazeui.min.js"></script>
+  <script src="http://cdn.amazeui.org/jquery/2.1.4/jquery.min.js"></script>
+  <script src="http://cdn.amazeui.org/amazeui/2.6.2/js/amazeui.min.js"></script>
   <!--<![endif]-->
   <!--[if lte IE 8 ]>
   <script src="http://libs.baidu.com/jquery/1.11.1/jquery.min.js"></script>
@@ -46,23 +46,41 @@
 </section>
 
 <section class="amp-main">
-  <div class="am-container">
-    <h1><a name="Amaze%20UI%20Datetime%20Picker" class="anchor" href="#Amaze%20UI%20Datetime%20Picker"><span class="header-link"></span></a>Amaze UI Datetime Picker</h1><hr>
+  <div class="am-container amp-content">
+    <h1><a name="amaze-ui-datetime-picker" class="anchor" href="#amaze-ui-datetime-picker"><span class="header-link"></span></a>Amaze UI Datetime Picker</h1><hr>
 <p>该项目来自 <a href="https://github.com/smalot/bootstrap-datetimepicker">bootstrap-datetimepicker</a>，只修改了 <code>CSS</code> 文件，使用需要结合原来的的 <code>class</code> 和 Amaze UI 使用。</p>
-<h2><a name="%3Ca%20href%3D%22http%3A%2F%2Famazeui.github.io%2Fdatetimepicker%2Fdocs%2Fdemo.html%22%3E%E4%BD%BF%E7%94%A8%E6%BC%94%E7%A4%BA%3C%2Fa%3E" class="anchor" href="#%3Ca%20href%3D%22http%3A%2F%2Famazeui.github.io%2Fdatetimepicker%2Fdocs%2Fdemo.html%22%3E%E4%BD%BF%E7%94%A8%E6%BC%94%E7%A4%BA%3C%2Fa%3E"><span class="header-link"></span></a><a href="http://amazeui.github.io/datetimepicker/docs/demo.html">使用演示</a></h2><h2><a name="%E8%B0%83%E7%94%A8%E6%96%B9%E6%B3%95" class="anchor" href="#%E8%B0%83%E7%94%A8%E6%96%B9%E6%B3%95"><span class="header-link"></span></a>调用方法</h2><p><strong>设置时间格式：<code>format</code> 选项</strong></p>
-<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"2015-02-15 21:05"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"datetimepicker"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"am-form-field"</span>&gt;</span></code></pre></div><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker({
+<h2><a name="a-hrefhttpamazeui-github-iodatetimepickerdocsdemo-htmlshi-yong-yan-shi-a" class="anchor" href="#a-hrefhttpamazeui-github-iodatetimepickerdocsdemo-htmlshi-yong-yan-shi-a"><span class="header-link"></span></a><a href="http://amazeui.github.io/datetimepicker/docs/demo.html">使用演示</a></h2><h2><a name="shi-yong-shuo-ming" class="anchor" href="#shi-yong-shuo-ming"><span class="header-link"></span></a>使用说明</h2><p><strong>使用说明：</strong></p>
+<ol>
+<li><p>获取 Amaze UI Datetime Picker</p>
+<ul>
+<li><a href="https://github.com/amazeui/datetimepicker/archive/master.zip">直接下载</a></li>
+</ul>
+</li>
+<li><p>引入 Datetime Picker 样式（<code>css</code> 目录下）以及 Amaze UI 样式：</p>
+<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"path/to/amazeui.min.css"</span>/&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">link</span> <span class="hljs-attr">rel</span>=<span class="hljs-string">"stylesheet"</span> <span class="hljs-attr">href</span>=<span class="hljs-string">"path/to/amazeui.datetimepicker.css"</span>/&gt;</span></code></pre></div></li>
+<li><p>引入 jQuery 相关文件及 Datetime Picker JS 文件（下载包 <code>js</code> 目录下）：</p>
+<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"path/to/jquery.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"path/to/amazeui.datetimepicker.min.js"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre></div></li>
+<li><p>初始化 Datetime Picker:</p>
+<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"2015-02-15 21:05"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"datetimepicker"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-form-field"</span>&gt;</span></code></pre></div><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker({
+format: <span class="hljs-string">'yyyy-mm-dd hh:ii'</span>
+});</code></pre></div></li>
+</ol>
+<h2><a name="diao-yong-fang-fa" class="anchor" href="#diao-yong-fang-fa"><span class="header-link"></span></a>调用方法</h2><p><strong>设置时间格式：<code>format</code> 选项</strong></p>
+<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"2015-02-15 21:05"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"datetimepicker"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-form-field"</span>&gt;</span></code></pre></div><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker({
   format: <span class="hljs-string">'yyyy-mm-dd hh:ii'</span>
 });</code></pre></div><p>也可以通过 <code>data-date-format</code> 来设置时间格式</p>
-<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"2015-02-14 21:05"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"datetimepicker"</span> <span class="hljs-attribute">data-date-format</span>=<span class="hljs-value">"yyyy-mm-dd hh:ii"</span>&gt;</span></code></pre></div><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker();</code></pre></div><p><strong>结合 Amaze UI 组件</strong></p>
+<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"2015-02-14 21:05"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"datetimepicker"</span> <span class="hljs-attr">data-date-format</span>=<span class="hljs-string">"yyyy-mm-dd hh:ii"</span>&gt;</span></code></pre></div><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker();</code></pre></div><p><strong>结合 Amaze UI 组件</strong></p>
 <p>结合 Amaze UI Class <code>.am-input-group</code> 来实现组件样式，其中 Class <code>.date</code>、<code>.add-on</code>、<code>.icon-th</code> 都在原 JS 中有引用，使用时务必加上。</p>
-<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"am-input-group date"</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"datetimepicker"</span> <span class="hljs-attribute">data-date</span>=<span class="hljs-value">"12-02-2012"</span> <span class="hljs-attribute">data-date-format</span>=<span class="hljs-value">"dd-mm-yyyy"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">size</span>=<span class="hljs-value">"16"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"2015-02-14 14:45"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"am-form-field"</span> <span class="hljs-attribute">readonly</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"am-input-group-label add-on"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-th am-icon-calendar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker();</code></pre></div><p><strong>内联调用：</strong></p>
-<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">id</span>=<span class="hljs-value">"datetimepicker"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker();</code></pre></div><h2><a name="%E4%BE%9D%E8%B5%96%E5%92%8C%E7%BC%96%E8%AF%91" class="anchor" href="#%E4%BE%9D%E8%B5%96%E5%92%8C%E7%BC%96%E8%AF%91"><span class="header-link"></span></a>依赖和编译</h2><p>依赖 Amaze UI <code>input-group``form</code>，克隆项目后在 Node.js 环境下，首先全局安装 Gulp：</p>
+<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-input-group date"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"datetimepicker"</span> <span class="hljs-attr">data-date</span>=<span class="hljs-string">"12-02-2012"</span> <span class="hljs-attr">data-date-format</span>=<span class="hljs-string">"dd-mm-yyyy"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">size</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"2015-02-14 14:45"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-form-field"</span> <span class="hljs-attr">readonly</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-input-group-label add-on"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-th am-icon-calendar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker();</code></pre></div><p><strong>内联调用：</strong></p>
+<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"datetimepicker"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div><div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker();</code></pre></div><h2><a name="yi-lai-he-bian-yi" class="anchor" href="#yi-lai-he-bian-yi"><span class="header-link"></span></a>依赖和编译</h2><p>依赖 Amaze UI <code>input-group``form</code>，克隆项目后在 Node.js 环境下，首先全局安装 Gulp：</p>
 <div class="doc-code demo-highlight"><pre><code class="bash">npm install -g gulp</code></pre></div><p>然后进入目录安装依赖：</p>
 <div class="doc-code demo-highlight"><pre><code class="bash">npm install</code></pre></div><p>接下来，执行 gulp：</p>
-<div class="doc-code demo-highlight"><pre><code class="bash">gulp serve</code></pre></div><h2><a name="%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE" class="anchor" href="#%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE"><span class="header-link"></span></a>插件配置</h2><p>所有的配置参数都是对 <code>Date</code> 对象的处理，按照 ISO-8601 日期和时间的表示方法，设置你的时间格式 <code>format</code> :</p>
+<div class="doc-code demo-highlight"><pre><code class="bash">gulp serve</code></pre></div><h2><a name="cha-jian-pei-zhi" class="anchor" href="#cha-jian-pei-zhi"><span class="header-link"></span></a>插件配置</h2><p>所有的配置参数都是对 <code>Date</code> 对象的处理，按照 ISO-8601 日期和时间的表示方法，设置你的时间格式 <code>format</code> :</p>
 <ul>
 <li>yyyy-mm-dd</li>
 <li>yyyy-mm-dd hh:ii</li>
@@ -93,16 +111,16 @@
 <li>yy : 年, 2位数字表示</li>
 <li>yyyy : 年, 4位数字表示</li>
 </ul>
-<h3><a name="weekStart" class="anchor" href="#weekStart"><span class="header-link"></span></a>weekStart</h3><p>设置开始星期几的选择：接受整数 <code>0 - 6</code>，默认为 <code>0</code>，0 (Sunday) 到 6 (Saturday)。</p>
-<h3><a name="startDate" class="anchor" href="#startDate"><span class="header-link"></span></a>startDate</h3><p>设置时间开始参数：接受 <code>Date</code> 类型值，开始时间前面的日期将被设置为 <code>disabled</code>。</p>
-<h3><a name="endDate" class="anchor" href="#endDate"><span class="header-link"></span></a>endDate</h3><p>设置结束时间参数：接受 <code>Date</code> 类型值，结束时间后面的日期将被设置为 <code>disabled</code>。</p>
-<h3><a name="daysOfWeekDisabled" class="anchor" href="#daysOfWeekDisabled"><span class="header-link"></span></a>daysOfWeekDisabled</h3><p>禁用星期的列数：接受 <code>String</code> 或 <code>Array</code> 类型参数</p>
+<h3><a name="weekstart" class="anchor" href="#weekstart"><span class="header-link"></span></a>weekStart</h3><p>设置开始星期几的选择：接受整数 <code>0 - 6</code>，默认为 <code>0</code>，0 (Sunday) 到 6 (Saturday)。</p>
+<h3><a name="startdate" class="anchor" href="#startdate"><span class="header-link"></span></a>startDate</h3><p>设置时间开始参数：接受 <code>Date</code> 类型值，开始时间前面的日期将被设置为 <code>disabled</code>。</p>
+<h3><a name="enddate" class="anchor" href="#enddate"><span class="header-link"></span></a>endDate</h3><p>设置结束时间参数：接受 <code>Date</code> 类型值，结束时间后面的日期将被设置为 <code>disabled</code>。</p>
+<h3><a name="daysofweekdisabled" class="anchor" href="#daysofweekdisabled"><span class="header-link"></span></a>daysOfWeekDisabled</h3><p>禁用星期的列数：接受 <code>String</code> 或 <code>Array</code> 类型参数</p>
 <ul>
 <li>默认值为 <code>&#39;&#39;, []</code></li>
 <li>示例：设置周六和周日禁用: <code>daysOfWeekDisabled: &#39;0,6&#39;</code> 或者 <code>daysOfWeekDisabled: [0,6]</code>。</li>
 </ul>
 <h3><a name="autoclose" class="anchor" href="#autoclose"><span class="header-link"></span></a>autoclose</h3><p>设置时间后自动关闭时间选择器面板，参数类型：<code>Boolean</code> 默认值为：<code>false</code> 不关闭。</p>
-<h3><a name="startView" class="anchor" href="#startView"><span class="header-link"></span></a>startView</h3><p>视图模式，通过参数 <code>startView</code> 设置日历初始视图模式，可以接受 <code>Number</code> | <code>String</code> 类型：</p>
+<h3><a name="startview" class="anchor" href="#startview"><span class="header-link"></span></a>startView</h3><p>视图模式，通过参数 <code>startView</code> 设置日历初始视图模式，可以接受 <code>Number</code> | <code>String</code> 类型：</p>
 <ul>
 <li><code>0</code> 或者 <code>hour</code>: 显示分</li>
 <li><code>1</code> 或者 <code>days</code>: 显示小时</li>
@@ -110,7 +128,7 @@
 <li><code>3</code> 或者 <code>year</code>: 显示月</li>
 <li><code>4</code> 或者 <code>decade</code>: 显示年</li>
 </ul>
-<h3><a name="minView" class="anchor" href="#minView"><span class="header-link"></span></a>minView</h3><p>最小视图模式，可以接受 <code>Number</code> | <code>String</code> 类型：</p>
+<h3><a name="minview" class="anchor" href="#minview"><span class="header-link"></span></a>minView</h3><p>最小视图模式，可以接受 <code>Number</code> | <code>String</code> 类型：</p>
 <ul>
 <li><code>0</code> 或者 <code>hour</code>: 显示分（默认）</li>
 <li><code>1</code> 或者 <code>days</code>: 显示小时</li>
@@ -118,7 +136,7 @@
 <li><code>3</code> 或者 <code>year</code>: 显示月</li>
 <li><code>4</code> 或者 <code>decade</code>: 显示年</li>
 </ul>
-<h3><a name="maxView" class="anchor" href="#maxView"><span class="header-link"></span></a>maxView</h3><p>最大视图模式，可以接受 <code>Number</code> | <code>String</code> 类型：</p>
+<h3><a name="maxview" class="anchor" href="#maxview"><span class="header-link"></span></a>maxView</h3><p>最大视图模式，可以接受 <code>Number</code> | <code>String</code> 类型：</p>
 <ul>
 <li><code>0</code> 或者 <code>hour</code>: 显示分</li>
 <li><code>1</code> 或者 <code>days</code>: 显示小时</li>
@@ -126,21 +144,21 @@
 <li><code>3</code> 或者 <code>year</code>: 显示月</li>
 <li><code>4</code> 或者 <code>decade</code>: 显示年（默认）</li>
 </ul>
-<h3><a name="todayBtn" class="anchor" href="#todayBtn"><span class="header-link"></span></a>todayBtn</h3><p>是否显示按钮 Today ，点击 Today 会跳转到今日的时间，默认为 <code>false</code></p>
-<h3><a name="todayHighlight" class="anchor" href="#todayHighlight"><span class="header-link"></span></a>todayHighlight</h3><p>是否高亮当日的日期，默认为 <code>false</code>。</p>
-<h3><a name="keyboardNavigation" class="anchor" href="#keyboardNavigation"><span class="header-link"></span></a>keyboardNavigation</h3><p>是否允许键盘选择时间，默认为 <code>true</code>。</p>
+<h3><a name="todaybtn" class="anchor" href="#todaybtn"><span class="header-link"></span></a>todayBtn</h3><p>是否显示按钮 Today ，点击 Today 会跳转到今日的时间，默认为 <code>false</code></p>
+<h3><a name="todayhighlight" class="anchor" href="#todayhighlight"><span class="header-link"></span></a>todayHighlight</h3><p>是否高亮当日的日期，默认为 <code>false</code>。</p>
+<h3><a name="keyboardnavigation" class="anchor" href="#keyboardnavigation"><span class="header-link"></span></a>keyboardNavigation</h3><p>是否允许键盘选择时间，默认为 <code>true</code>。</p>
 <h3><a name="language" class="anchor" href="#language"><span class="header-link"></span></a>language</h3><p>语言设置，默认使用英语 <code>&#39;en&#39;</code> ,要支持更多语言可以通过参考下面的 I18N 扩展。</p>
-<h3><a name="forceParse" class="anchor" href="#forceParse"><span class="header-link"></span></a>forceParse</h3><p>是否强制解析 <code>&lt;input&gt;</code> 元素内的时间格式, 默认为: <code>true</code></p>
-<h3><a name="minuteStep" class="anchor" href="#minuteStep"><span class="header-link"></span></a>minuteStep</h3><p>设置分钟视图时间间隔数，默认为 <code>5</code>。</p>
-<h3><a name="pickerReferer%20%3A%20%EF%BC%88%E5%BC%83%E7%94%A8%EF%BC%89" class="anchor" href="#pickerReferer%20%3A%20%EF%BC%88%E5%BC%83%E7%94%A8%EF%BC%89"><span class="header-link"></span></a>pickerReferer : （弃用）</h3><p>指定输入的 <code>&lt;input&gt;</code> 元素，默认为 <code>default</code>。</p>
-<h3><a name="pickerPosition" class="anchor" href="#pickerPosition"><span class="header-link"></span></a>pickerPosition</h3><p>设置选择器的定位方式，接受 <code>String</code> 类型：</p>
+<h3><a name="forceparse" class="anchor" href="#forceparse"><span class="header-link"></span></a>forceParse</h3><p>是否强制解析 <code>&lt;input&gt;</code> 元素内的时间格式, 默认为: <code>true</code></p>
+<h3><a name="minutestep" class="anchor" href="#minutestep"><span class="header-link"></span></a>minuteStep</h3><p>设置分钟视图时间间隔数，默认为 <code>5</code>。</p>
+<h3><a name="pickerreferer-qi-yong-" class="anchor" href="#pickerreferer-qi-yong-"><span class="header-link"></span></a>pickerReferer : （弃用）</h3><p>指定输入的 <code>&lt;input&gt;</code> 元素，默认为 <code>default</code>。</p>
+<h3><a name="pickerposition" class="anchor" href="#pickerposition"><span class="header-link"></span></a>pickerPosition</h3><p>设置选择器的定位方式，接受 <code>String</code> 类型：</p>
 <ul>
 <li><code>&#39;bottom-right&#39;</code> (默认)</li>
 <li><code>&#39;bottom-left&#39;</code></li>
 <li><code>&#39;top-right&#39;</code></li>
 <li><code>&#39;top-left&#39;</code></li>
 </ul>
-<h3><a name="viewSelect" class="anchor" href="#viewSelect"><span class="header-link"></span></a>viewSelect</h3><p>时间更新设置，默认为选择分面板时更新时间，可以接受 <code>Number</code> | <code>String</code> 类型：</p>
+<h3><a name="viewselect" class="anchor" href="#viewselect"><span class="header-link"></span></a>viewSelect</h3><p>时间更新设置，默认为选择分面板时更新时间，可以接受 <code>Number</code> | <code>String</code> 类型：</p>
 <ul>
 <li><code>0</code> 或者 <code>hour</code>: 显示分（默认）</li>
 <li><code>1</code> 或者 <code>days</code>: 显示小时</li>
@@ -148,58 +166,58 @@
 <li><code>3</code> 或者 <code>year</code>: 显示月</li>
 <li><code>4</code> 或者 <code>decade</code>: 显示年</li>
 </ul>
-<h3><a name="showMeridian" class="anchor" href="#showMeridian"><span class="header-link"></span></a>showMeridian</h3><p>是否显示 AM 和 PM 分隔小时面板。默认值为 <code>false</code>。</p>
-<h3><a name="initialDate" class="anchor" href="#initialDate"><span class="header-link"></span></a>initialDate</h3><p>设置时间选择器初始化的时间值，默认情况下是现在，你可以指定其他时间，<code>initialDate</code> 接受 <code>Date</code> | <code>String</code>， 默认值为: <code>new Date()</code>。</p>
+<h3><a name="showmeridian" class="anchor" href="#showmeridian"><span class="header-link"></span></a>showMeridian</h3><p>是否显示 AM 和 PM 分隔小时面板。默认值为 <code>false</code>。</p>
+<h3><a name="initialdate" class="anchor" href="#initialdate"><span class="header-link"></span></a>initialDate</h3><p>设置时间选择器初始化的时间值，默认情况下是现在，你可以指定其他时间，<code>initialDate</code> 接受 <code>Date</code> | <code>String</code>， 默认值为: <code>new Date()</code>。</p>
 <p><strong>组件结合</strong></p>
-<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"am-input-group date form_datetime-1"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">size</span>=<span class="hljs-value">"16"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">"2015-02-14 14:45"</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"am-form-field"</span> <span class="hljs-attribute">readonly</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"am-input-group-label add-on"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-th am-icon-calendar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><p><strong>带有删除的组件结合</strong></p>
-<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">div</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"am-input-group date form_datetime-3"</span> <span class="hljs-attribute">data-date</span>=<span class="hljs-value">"2015-02-14 14:45"</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">input</span> <span class="hljs-attribute">size</span>=<span class="hljs-value">"16"</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text"</span> <span class="hljs-attribute">value</span>=<span class="hljs-value">""</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"am-form-field"</span> <span class="hljs-attribute">readonly</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"add-on am-input-group-label"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-remove am-icon-close"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-  <span class="hljs-tag">&lt;<span class="hljs-title">span</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"add-on am-input-group-label"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-title">i</span> <span class="hljs-attribute">class</span>=<span class="hljs-value">"icon-th am-icon-calendar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-title">span</span>&gt;</span>
-<span class="hljs-tag">&lt;/<span class="hljs-title">div</span>&gt;</span></code></pre></div><h2><a name="%E6%96%B9%E6%B3%95" class="anchor" href="#%E6%96%B9%E6%B3%95"><span class="header-link"></span></a>方法</h2><h3><a name="%3Ccode%3E.datetimepicker(options)%3C%2Fcode%3E" class="anchor" href="#%3Ccode%3E.datetimepicker(options)%3C%2Fcode%3E"><span class="header-link"></span></a><code>.datetimepicker(options)</code></h3><p>初始化日期时间选择器。</p>
-<h3><a name="%3Ccode%3Eremove%3C%2Fcode%3E" class="anchor" href="#%3Ccode%3Eremove%3C%2Fcode%3E"><span class="header-link"></span></a><code>remove</code></h3><p>移除日期时间选择面板。</p>
-<div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class="hljs-string">'remove'</span>);</code></pre></div><h3><a name="%3Ccode%3Eshow%3C%2Fcode%3E" class="anchor" href="#%3Ccode%3Eshow%3C%2Fcode%3E"><span class="header-link"></span></a><code>show</code></h3><p>显示日期时间选择面板。</p>
-<div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class="hljs-string">'show'</span>);</code></pre></div><h3><a name="%3Ccode%3Ehide%3C%2Fcode%3E" class="anchor" href="#%3Ccode%3Ehide%3C%2Fcode%3E"><span class="header-link"></span></a><code>hide</code></h3><p>隐藏日期时间选择面板。</p>
-<div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class="hljs-string">'hide'</span>);</code></pre></div><h3><a name="%3Ccode%3Eupdate%3C%2Fcode%3E" class="anchor" href="#%3Ccode%3Eupdate%3C%2Fcode%3E"><span class="header-link"></span></a><code>update</code></h3><p>参数：</p>
+<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-input-group date form_datetime-1"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">size</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"2015-02-14 14:45"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-form-field"</span> <span class="hljs-attr">readonly</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-input-group-label add-on"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-th am-icon-calendar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div><p><strong>带有删除的组件结合</strong></p>
+<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-input-group date form_datetime-3"</span> <span class="hljs-attr">data-date</span>=<span class="hljs-string">"2015-02-14 14:45"</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">size</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">""</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-form-field"</span> <span class="hljs-attr">readonly</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"add-on am-input-group-label"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-remove am-icon-close"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"add-on am-input-group-label"</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"icon-th am-icon-calendar"</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></code></pre></div><h2><a name="fang-fa" class="anchor" href="#fang-fa"><span class="header-link"></span></a>方法</h2><h3><a name="code-datetimepickeroptionscode" class="anchor" href="#code-datetimepickeroptionscode"><span class="header-link"></span></a><code>.datetimepicker(options)</code></h3><p>初始化日期时间选择器。</p>
+<h3><a name="coderemovecode" class="anchor" href="#coderemovecode"><span class="header-link"></span></a><code>remove</code></h3><p>移除日期时间选择面板。</p>
+<div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class="hljs-string">'remove'</span>);</code></pre></div><h3><a name="codeshowcode" class="anchor" href="#codeshowcode"><span class="header-link"></span></a><code>show</code></h3><p>显示日期时间选择面板。</p>
+<div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class="hljs-string">'show'</span>);</code></pre></div><h3><a name="codehidecode" class="anchor" href="#codehidecode"><span class="header-link"></span></a><code>hide</code></h3><p>隐藏日期时间选择面板。</p>
+<div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class="hljs-string">'hide'</span>);</code></pre></div><h3><a name="codeupdatecode" class="anchor" href="#codeupdatecode"><span class="header-link"></span></a><code>update</code></h3><p>参数：</p>
 <ul>
 <li>currentDate (Date).</li>
 </ul>
 <p>更新指定的时间。</p>
 <div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class="hljs-string">'update'</span>, <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>());</code></pre></div><p>如果更新时间为现在时间，则不需要传值。</p>
-<div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class="hljs-string">'update'</span>);</code></pre></div><h3><a name="%3Ccode%3EsetStartDate%3C%2Fcode%3E" class="anchor" href="#%3Ccode%3EsetStartDate%3C%2Fcode%3E"><span class="header-link"></span></a><code>setStartDate</code></h3><p>设置开始时间，小于开始时间的将被禁用，<code>setStartDate</code> 接受：<code>String</code> 值。</p>
+<div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class="hljs-string">'update'</span>);</code></pre></div><h3><a name="codesetstartdatecode" class="anchor" href="#codesetstartdatecode"><span class="header-link"></span></a><code>setStartDate</code></h3><p>设置开始时间，小于开始时间的将被禁用，<code>setStartDate</code> 接受：<code>String</code> 值。</p>
 <div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class="hljs-string">'setStartDate'</span>, <span class="hljs-string">'2015-01-01'</span>);</code></pre></div><p>如果忽略该值，将不启用该选项。</p>
 <div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class="hljs-string">'setStartDate'</span>);
-$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class="hljs-string">'setStartDate'</span>, <span class="hljs-literal">null</span>);</code></pre></div><h3><a name="%3Ccode%3EsetEndDate%3C%2Fcode%3E" class="anchor" href="#%3Ccode%3EsetEndDate%3C%2Fcode%3E"><span class="header-link"></span></a><code>setEndDate</code></h3><p>设置结束时间，大于结束时间的将被禁用，<code>setEndDate</code> 接受：<code>String</code> 值。</p>
+$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class="hljs-string">'setStartDate'</span>, <span class="hljs-literal">null</span>);</code></pre></div><h3><a name="codesetenddatecode" class="anchor" href="#codesetenddatecode"><span class="header-link"></span></a><code>setEndDate</code></h3><p>设置结束时间，大于结束时间的将被禁用，<code>setEndDate</code> 接受：<code>String</code> 值。</p>
 <div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class="hljs-string">'setEndDate'</span>, <span class="hljs-string">'2014-12-31'</span>);</code></pre></div><p>如果忽略该值，选项无效。</p>
 <div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class="hljs-string">'setEndDate'</span>);
-$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class="hljs-string">'setEndDate'</span>, <span class="hljs-literal">null</span>);</code></pre></div><h3><a name="%3Ccode%3EsetDaysOfWeekDisabled%3C%2Fcode%3E" class="anchor" href="#%3Ccode%3EsetDaysOfWeekDisabled%3C%2Fcode%3E"><span class="header-link"></span></a><code>setDaysOfWeekDisabled</code></h3><p>禁用星期的列数：<code>setDaysOfWeekDisabled</code> 接受 <code>String</code> 或 <code>Array</code> 类型参数。</p>
+$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class="hljs-string">'setEndDate'</span>, <span class="hljs-literal">null</span>);</code></pre></div><h3><a name="codesetdaysofweekdisabledcode" class="anchor" href="#codesetdaysofweekdisabledcode"><span class="header-link"></span></a><code>setDaysOfWeekDisabled</code></h3><p>禁用星期的列数：<code>setDaysOfWeekDisabled</code> 接受 <code>String</code> 或 <code>Array</code> 类型参数。</p>
 <div class="doc-code demo-highlight"><pre><code class="javascript"><span class="hljs-comment">// 周日和周六将被禁用</span>
 $(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class="hljs-string">'setDaysOfWeekDisabled'</span>, [<span class="hljs-number">0</span>,<span class="hljs-number">6</span>]);</code></pre></div><p>如果忽略该值，选项无效。</p>
 <div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class="hljs-string">'setDaysOfWeekDisabled'</span>);
-$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class="hljs-string">'setDaysOfWeekDisabled'</span>, <span class="hljs-literal">null</span>);</code></pre></div><h2><a name="%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6" class="anchor" href="#%E8%87%AA%E5%AE%9A%E4%B9%89%E4%BA%8B%E4%BB%B6"><span class="header-link"></span></a>自定义事件</h2><h3><a name="%3Ccode%3Eshow%3C%2Fcode%3E" class="anchor" href="#%3Ccode%3Eshow%3C%2Fcode%3E"><span class="header-link"></span></a><code>show</code></h3><p>时间选择器显示时触发。</p>
+$(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class="hljs-string">'setDaysOfWeekDisabled'</span>, <span class="hljs-literal">null</span>);</code></pre></div><h2><a name="zi-ding-yi-shi-jian" class="anchor" href="#zi-ding-yi-shi-jian"><span class="header-link"></span></a>自定义事件</h2><h3><a name="codeshowcode" class="anchor" href="#codeshowcode"><span class="header-link"></span></a><code>show</code></h3><p>时间选择器显示时触发。</p>
 <div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#date-end'</span>)
   .datetimepicker()
-  .on(<span class="hljs-string">'show'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(ev)</span></span>{
+  .on(<span class="hljs-string">'show'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ev</span>)</span>{
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'datetimepciker 显示了'</span>);
-  });</code></pre></div><h3><a name="%3Ccode%3Ehide%3C%2Fcode%3E" class="anchor" href="#%3Ccode%3Ehide%3C%2Fcode%3E"><span class="header-link"></span></a><code>hide</code></h3><p>时间选择器隐藏时触发。</p>
+  });</code></pre></div><h3><a name="codehidecode" class="anchor" href="#codehidecode"><span class="header-link"></span></a><code>hide</code></h3><p>时间选择器隐藏时触发。</p>
 <div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#date-end'</span>)
   .datetimepicker()
-  .on(<span class="hljs-string">'hide'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(ev)</span></span>{
+  .on(<span class="hljs-string">'hide'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ev</span>)</span>{
     <span class="hljs-built_in">console</span>.log(<span class="hljs-string">'datetimepciker 将隐藏'</span>);
-  });</code></pre></div><h3><a name="%3Ccode%3EchangeDate%3C%2Fcode%3E" class="anchor" href="#%3Ccode%3EchangeDate%3C%2Fcode%3E"><span class="header-link"></span></a><code>changeDate</code></h3><p>时间日期发生修改时触发，通过 <code>ev.date</code> 获取修改后的时间。</p>
+  });</code></pre></div><h3><a name="codechangedatecode" class="anchor" href="#codechangedatecode"><span class="header-link"></span></a><code>changeDate</code></h3><p>时间日期发生修改时触发，通过 <code>ev.date</code> 获取修改后的时间。</p>
 <div class="doc-code demo-highlight"><pre><code class="javascript">$(<span class="hljs-string">'#date-end'</span>)
   .datetimepicker()
-  .on(<span class="hljs-string">'changeDate'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(ev)</span></span>{
+  .on(<span class="hljs-string">'changeDate'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">ev</span>)</span>{
     <span class="hljs-keyword">if</span> (ev.date.valueOf() &lt; date-start-display.valueOf()){
       ....
     }
-  });</code></pre></div><h3><a name="%3Ccode%3EchangeYear%3C%2Fcode%3E" class="anchor" href="#%3Ccode%3EchangeYear%3C%2Fcode%3E"><span class="header-link"></span></a><code>changeYear</code></h3><p>年份修改时触发。</p>
-<h3><a name="%3Ccode%3EchangeMonth%3C%2Fcode%3E" class="anchor" href="#%3Ccode%3EchangeMonth%3C%2Fcode%3E"><span class="header-link"></span></a><code>changeMonth</code></h3><p>月份修改时触发。</p>
-<h3><a name="%3Ccode%3EoutOfRange%3C%2Fcode%3E" class="anchor" href="#%3Ccode%3EoutOfRange%3C%2Fcode%3E"><span class="header-link"></span></a><code>outOfRange</code></h3><p>当选择了 <code>startDate</code> 前的时间和 <code>endDate</code> 后面的时间将触发该事件，<code>setDate</code>  <code>setUTCDate</code> 也会触发。</p>
-<h2><a name="%E9%94%AE%E7%9B%98%E6%8E%A7%E5%88%B6%E5%AF%BC%E8%88%AA" class="anchor" href="#%E9%94%AE%E7%9B%98%E6%8E%A7%E5%88%B6%E5%AF%BC%E8%88%AA"><span class="header-link"></span></a>键盘控制导航</h2><h3><a name="up%2C%20down%2C%20left%2C%20right%20arrow%20keys" class="anchor" href="#up%2C%20down%2C%20left%2C%20right%20arrow%20keys"><span class="header-link"></span></a>up, down, left, right arrow keys</h3><ul>
+  });</code></pre></div><h3><a name="codechangeyearcode" class="anchor" href="#codechangeyearcode"><span class="header-link"></span></a><code>changeYear</code></h3><p>年份修改时触发。</p>
+<h3><a name="codechangemonthcode" class="anchor" href="#codechangemonthcode"><span class="header-link"></span></a><code>changeMonth</code></h3><p>月份修改时触发。</p>
+<h3><a name="codeoutofrangecode" class="anchor" href="#codeoutofrangecode"><span class="header-link"></span></a><code>outOfRange</code></h3><p>当选择了 <code>startDate</code> 前的时间和 <code>endDate</code> 后面的时间将触发该事件，<code>setDate</code>  <code>setUTCDate</code> 也会触发。</p>
+<h2><a name="jian-pan-kong-zhi-dao-hang" class="anchor" href="#jian-pan-kong-zhi-dao-hang"><span class="header-link"></span></a>键盘控制导航</h2><h3><a name="up-down-left-right-arrow-keys" class="anchor" href="#up-down-left-right-arrow-keys"><span class="header-link"></span></a>up, down, left, right arrow keys</h3><ul>
 <li><p>上、下、左、右键控制选择日期。</p>
 </li>
 <li><p><code>Shift</code> + 上或者左向前移动一个月，<code>Shift</code> + 下或右向后移动一个月。</p>
@@ -209,12 +227,12 @@ $(<span class="hljs-string">'#datetimepicker'</span>).datetimepicker(<span class
 </ul>
 <h3><a name="escape" class="anchor" href="#escape"><span class="header-link"></span></a>escape</h3><p><code>ESC</code> 键退出激活的时间选择器。</p>
 <h3><a name="enter" class="anchor" href="#enter"><span class="header-link"></span></a>enter</h3><p><code>Enter</code> 回车键能够选择日期。</p>
-<h2><a name="%E9%BC%A0%E6%A0%87%E6%BB%9A%E8%BD%AE%E5%AF%BC%E8%88%AA" class="anchor" href="#%E9%BC%A0%E6%A0%87%E6%BB%9A%E8%BD%AE%E5%AF%BC%E8%88%AA"><span class="header-link"></span></a>鼠标滚轮导航</h2><h3><a name="%E4%BE%9D%E8%B5%96" class="anchor" href="#%E4%BE%9D%E8%B5%96"><span class="header-link"></span></a>依赖</h3><p>支持鼠标滚轮导航需要依赖 <a href="https://github.com/brandonaaron/jquery-mousewheel">jQuery Mouse Wheel Plugin</a></p>
-<h3><a name="%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0" class="anchor" href="#%E9%85%8D%E7%BD%AE%E5%8F%82%E6%95%B0"><span class="header-link"></span></a>配置参数</h3><h4><a name="wheelViewModeNavigation" class="anchor" href="#wheelViewModeNavigation"><span class="header-link"></span></a>wheelViewModeNavigation</h4><p>是否支持使用鼠标滚轮浏览不同的视图模式，<code>wheelViewModeNavigation</code> 默认为 <code>false</code>。</p>
-<h4><a name="wheelViewModeNavigationInverseDirection" class="anchor" href="#wheelViewModeNavigationInverseDirection"><span class="header-link"></span></a>wheelViewModeNavigationInverseDirection</h4><p>是否反向滚动, 默认的是向上滚动来查看，默认为：<code>false</code></p>
-<h4><a name="wheelViewModeNavigationDelay" class="anchor" href="#wheelViewModeNavigationDelay"><span class="header-link"></span></a>wheelViewModeNavigationDelay</h4><p>设置面板滚动时间间距，<code>wheelViewModeNavigationDelay</code> 默认值为 <code>100</code>。</p>
-<h3><a name="Demo" class="anchor" href="#Demo"><span class="header-link"></span></a>Demo</h3><p>支持鼠标滚轮控制器的<a href="http://lyonlai.github.io/bootstrap-datetimepicker/demo.html">Demo</a></p>
-<h2><a name="I18N%20%E5%9B%BD%E9%99%85%E5%8C%96" class="anchor" href="#I18N%20%E5%9B%BD%E9%99%85%E5%8C%96"><span class="header-link"></span></a>I18N 国际化</h2><p>扩展语言支持, <a href="https://github.com/smalot/bootstrap-datetimepicker/tree/master/js/locales">其他语言扩展示例Demo</a></p>
+<h2><a name="shu-biao-gun-lun-dao-hang" class="anchor" href="#shu-biao-gun-lun-dao-hang"><span class="header-link"></span></a>鼠标滚轮导航</h2><h3><a name="yi-lai" class="anchor" href="#yi-lai"><span class="header-link"></span></a>依赖</h3><p>支持鼠标滚轮导航需要依赖 <a href="https://github.com/brandonaaron/jquery-mousewheel">jQuery Mouse Wheel Plugin</a></p>
+<h3><a name="pei-zhi-can-shu" class="anchor" href="#pei-zhi-can-shu"><span class="header-link"></span></a>配置参数</h3><h4><a name="wheelviewmodenavigation" class="anchor" href="#wheelviewmodenavigation"><span class="header-link"></span></a>wheelViewModeNavigation</h4><p>是否支持使用鼠标滚轮浏览不同的视图模式，<code>wheelViewModeNavigation</code> 默认为 <code>false</code>。</p>
+<h4><a name="wheelviewmodenavigationinversedirection" class="anchor" href="#wheelviewmodenavigationinversedirection"><span class="header-link"></span></a>wheelViewModeNavigationInverseDirection</h4><p>是否反向滚动, 默认的是向上滚动来查看，默认为：<code>false</code></p>
+<h4><a name="wheelviewmodenavigationdelay" class="anchor" href="#wheelviewmodenavigationdelay"><span class="header-link"></span></a>wheelViewModeNavigationDelay</h4><p>设置面板滚动时间间距，<code>wheelViewModeNavigationDelay</code> 默认值为 <code>100</code>。</p>
+<h3><a name="demo" class="anchor" href="#demo"><span class="header-link"></span></a>Demo</h3><p>支持鼠标滚轮控制器的<a href="http://lyonlai.github.io/bootstrap-datetimepicker/demo.html">Demo</a></p>
+<h2><a name="i18n-guo-ji-hua" class="anchor" href="#i18n-guo-ji-hua"><span class="header-link"></span></a>I18N 国际化</h2><p>扩展语言支持, <a href="https://github.com/smalot/bootstrap-datetimepicker/tree/master/js/locales">其他语言扩展示例Demo</a></p>
 <div class="doc-code demo-highlight"><pre><code class="javascript">$.fn.datetimepicker.dates[<span class="hljs-string">'zh-CN'</span>] = {
   days: [<span class="hljs-string">"星期日"</span>, <span class="hljs-string">"星期一"</span>, <span class="hljs-string">"星期二"</span>, <span class="hljs-string">"星期三"</span>, <span class="hljs-string">"星期四"</span>, <span class="hljs-string">"星期五"</span>, <span class="hljs-string">"星期六"</span>, <span class="hljs-string">"星期日"</span>],
   daysShort: [<span class="hljs-string">"周日"</span>, <span class="hljs-string">"周一"</span>, <span class="hljs-string">"周二"</span>, <span class="hljs-string">"周三"</span>, <span class="hljs-string">"周四"</span>, <span class="hljs-string">"周五"</span>, <span class="hljs-string">"周六"</span>, <span class="hljs-string">"周日"</span>],
@@ -235,15 +253,15 @@ $(<span class="hljs-string">'.xxx'</span>).datetimepicker({
 <div class="doc-code demo-highlight"><pre><code class="javascript">$.fn.datetimepicker.dates[<span class="hljs-string">'pt-BR'</span>] = {
   format: <span class="hljs-string">'dd/mm/yyyy'</span>
 };</code></pre></div><p>调用你扩展的语言插件，注意字符编码格式:</p>
-<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-title">script</span> <span class="hljs-attribute">type</span>=<span class="hljs-value">"text/javascript"</span> <span class="hljs-attribute">src</span>=<span class="hljs-value">"datetimepicker.zh.js"</span> <span class="hljs-attribute">charset</span>=<span class="hljs-value">"UTF-8"</span>&gt;</span><span class="javascript"></span><span class="hljs-tag">&lt;/<span class="hljs-title">script</span>&gt;</span></code></pre></div>
+<div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">script</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text/javascript"</span> <span class="hljs-attr">src</span>=<span class="hljs-string">"datetimepicker.zh.js"</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">"UTF-8"</span>&gt;</span><span class="undefined"></span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre></div>
 
     <nav class="amp-pager">
     </nav>
   </div>
 </section>
 
-<footer class="amp-footer"><div class="am-g am-g-fixed"><div class="am-u-md-4 am-u-md-push-8"><ul class="amz-social"><li><a href="javascript: void(0)" data-am-popover="{content: 'Amaze UI 交流 Q 群：374946651'}" title="Amaze UI 用户交流群" target="_blank"><span class="am-icon-qq"></span></a></li><li><a href="http://weibo.com/allmobilize" title="云适配微博" target="_blank"><span class="am-icon-weibo"></span></a></li><li><a href="#am-wechat" title="云适配微信" data-am-modal><span class="am-icon-wechat"></span></a></li><li><a class="new-issue" href="https://github.com/allmobilize/amazeui/issues/new?title=Bug%3A%20&body=**%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0**%0A%0A%EF%BC%88%E6%8F%8F%E8%BF%B0%E4%B8%80%E4%B8%8B%E9%97%AE%E9%A2%98%EF%BC%89%0A%0A**%E4%BA%A7%E7%94%9F%E7%8E%AF%E5%A2%83**%0A%0A-%20%E8%AE%BE%E5%A4%87%EF%BC%9A%EF%BC%88%E6%89%8B%E6%9C%BA%E3%80%81%E5%B9%B3%E6%9D%BF%E7%AD%89%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E6%97%B6%E5%A1%AB%E5%86%99%E6%AD%A4%E9%A1%B9%EF%BC%89%0A-%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-%20%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-%20%E6%BC%94%E7%A4%BA%E5%9C%B0%E5%9D%80%EF%BC%9A%0A%0A**%E5%A4%8D%E7%8E%B0%E6%AD%A5%E5%A5%8F**%0A%0A1.%20%0A2.%20%0A...%20%0A%20%0A**UA:**%20%0A" target="_blank" title="Bug 反馈"><span class="am-icon-paper-plane"></span></a></li></ul></div><div class="col-md-8 col-md-pull-4 am-u-md-8 am-u-md-pull-4"><h2 class="amz-fd"><a>云适配</a></h2><ul class="amz-links"><li><a href="http://amazeui.org/about/wantu" class="am-icon-heart">&nbsp;妹子招亲</a> | <a href="http://amazeui.org/about/contact">联系我们</a></li></ul><p class="amz-cp">&copy; 2015 AllMobilize, Inc. <a href="http://opensource.org/licenses/MIT" target="_blank">MIT license</a>. Developed with <a href="http://www.jetbrains.com/webstorm/" target="_blank">WebStorm</a>.</p></div></div></footer><div class="am-modal am-modal-no-btn" tabindex="-1" id="am-wechat"><div class="am-modal-dialog"><div class="am-modal-hd"><a href="" class="am-close am-close-spin" data-am-modal-close>&times;</a></div><div class="am-modal-bd"><img src="http://a.static.amazeui.org/assets/2.x/i/am/qr-ui.jpg" alt="Amaze UI 微信"/><br/>在微信上关注我们</div></div></div><div class="amp-toolbar" id="amp-toolbar"><a href="#top" title="回到顶部" class="am-icon-btn am-icon-arrow-up" id="amp-go-top"></a></div>
-<script src="http://a.static.amazeui.org/assets/plugin/js/app.min.js"></script>
+<footer class="amp-footer"><div class="am-g am-g-fixed"><div class="am-u-md-4 am-u-md-push-8"><ul class="amz-social"><li><a href="http://weibo.com/amazeui" title="云适配微博" target="_blank"><span class="am-icon-weibo"></span></a></li><li><a href="#am-wechat" title="云适配微信" data-am-modal><span class="am-icon-wechat"></span></a></li><li><a class="new-issue" href="https://github.com/amazeui/amazeui/issues/new?title=Bug%3A%20&body=**%E9%97%AE%E9%A2%98%E6%8F%8F%E8%BF%B0**%0A%0A%EF%BC%88%E6%8F%8F%E8%BF%B0%E4%B8%80%E4%B8%8B%E9%97%AE%E9%A2%98%EF%BC%89%0A%0A**%E4%BA%A7%E7%94%9F%E7%8E%AF%E5%A2%83**%0A%0A-%20%E8%AE%BE%E5%A4%87%EF%BC%9A%EF%BC%88%E6%89%8B%E6%9C%BA%E3%80%81%E5%B9%B3%E6%9D%BF%E7%AD%89%E7%A7%BB%E5%8A%A8%E8%AE%BE%E5%A4%87%E6%97%B6%E5%A1%AB%E5%86%99%E6%AD%A4%E9%A1%B9%EF%BC%89%0A-%20%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-%20%E6%B5%8F%E8%A7%88%E5%99%A8%E5%8F%8A%E7%89%88%E6%9C%AC%EF%BC%9A%0A-%20%E6%BC%94%E7%A4%BA%E5%9C%B0%E5%9D%80%EF%BC%9A%0A%0A**%E5%A4%8D%E7%8E%B0%E6%AD%A5%E5%A5%8F**%0A%0A1.%20%0A2.%20%0A...%20%0A%20%0A**UA:**%20%0A" target="_blank" title="Bug 反馈"><span class="am-icon-paper-plane"></span></a></li></ul></div><div class="col-md-8 col-md-pull-4 am-u-md-8 am-u-md-pull-4"><h2 class="amz-fd"><a>云适配</a></h2><ul class="amz-links"><li><a href="http://amazeui.org/about/wantu" class="am-icon-heart">&nbsp;妹子招亲</a> | <a href="http://amazeui.org/about/contact">联系我们</a></li></ul><p class="amz-cp">&copy; 2015 AllMobilize, Inc. <a href="http://opensource.org/licenses/MIT" target="_blank">MIT license</a>. Developed with <a href="http://www.jetbrains.com/webstorm/" target="_blank">WebStorm</a>.</p></div></div></footer><div class="am-modal am-modal-no-btn" tabindex="-1" id="am-wechat"><div class="am-modal-dialog"><div class="am-modal-hd"><a href="" class="am-close am-close-spin" data-am-modal-close>&times;</a></div><div class="am-modal-bd"><img src="http://s.amazeui.org/assets/2.x/i/am/qr-ui.jpg" alt="Amaze UI 微信"/><br/>在微信上关注我们</div></div></div><div class="amp-toolbar" id="amp-toolbar"><a href="#top" title="回到顶部" class="am-icon-btn am-icon-arrow-up" id="amp-go-top"></a></div>
+<script src="http://s.amazeui.org/assets/plugin/js/app.min.js"></script>
   <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
 
 <script>
