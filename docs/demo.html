@@ -52,7 +52,10 @@
 
 <script>
   $(function() {
-    $('.form-datetime').datetimepicker({format: 'yyyy-mm-dd hh:ii'});
+    $('.form-datetime').datetimepicker({
+      startDate: new Date(),
+      format: 'yyyy-mm-dd hh:ii'
+    });
   });
 </script></div><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">size</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"2015-02-14 14:45"</span> <span class="hljs-attr">readonly</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-datetime am-form-field"</span>&gt;</span>
 
