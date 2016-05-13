@@ -13,7 +13,6 @@ title: Amaze UI Datetime Picker
 <script>
   $(function() {
     $('.form-datetime').datetimepicker({
-      startDate: new Date(),
       format: 'yyyy-mm-dd hh:ii'
     });
   });

@@ -13,19 +13,17 @@
   "keywords": [
     "amaze-ui",
     "datetimepicker",
-    "jquery-plugin"
+    "jquery-plugin",
+    "amazeui-plugin"
   ],
   "author": "smalot",
-  "license": "Apache",
+  "license": "Apache-2.0",
   "bugs": {
     "url": "https://github.com/amazeui/datetimepicker/issues"
   },
   "homepage": "https://github.com/amazeui/datetimepicker",
   "devDependencies": {
     "amazeui-doc-util": "^0.5.0",
-    "browser-sync": "^2.12.8",
-    "browserify": "^13.0.1",
-    "browserify-shim": "^3.8.2",
     "del": "^2.2.0",
     "gulp": "^3.8.10",
     "gulp-autoprefixer": "^3.1.0",
@@ -40,14 +38,6 @@
     "vinyl-transform": "^1.0.0"
   },
   "dependencies": {
-    "amazeui": "^2.1.0"
-  },
-  "browserify": {
-    "transform": [
-      "browserify-shim"
-    ]
-  },
-  "browserify-shim": {
-    "jquery": "global:jQuery"
+    "amazeui": "^2.6.2"
   }
 }

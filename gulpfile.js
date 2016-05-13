@@ -6,7 +6,7 @@ var browserify = require('browserify');
 var transform = require('vinyl-transform');
 var markJSON = require('markit-json');
 var docUtil = require('amazeui-doc-util');
-var browserSync = require('browser-sync');
+var browserSync = require('browser-sync').create();
 var del = require('del');
 var runSequence = require('run-sequence');
 var reload = browserSync.reload;
@@ -56,7 +56,7 @@ gulp.task('less', function() {
 
 // Watch Files For Changes & Reload
 gulp.task('dev', ['default'], function () {
-  browserSync({
+  browserSync.init({
     notify: false,
     server: 'dist',
     logPrefix: 'AMP'
