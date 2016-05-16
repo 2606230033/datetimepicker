@@ -48,20 +48,31 @@
 <section class="amp-main">
   <div class="am-container amp-content">
     <h2><a name="datetime-picker-yan-shi" class="anchor" href="#datetime-picker-yan-shi"><span class="header-link"></span></a>Datetime Picker 演示</h2><hr>
-<h3><a name="mo-ren-input" class="anchor" href="#mo-ren-input"><span class="header-link"></span></a>默认 input</h3><div class="doc-example"><input size="16" type="text" value="2015-02-14 14:45" readonly class="form-datetime am-form-field">
-
+<h3><a name="mo-ren-input" class="anchor" href="#mo-ren-input"><span class="header-link"></span></a>默认 input</h3><div class="doc-example"><input size="16" type="text" value="2015-02-14 14:45" readonly class="form-datetime am-form-field" />
+<p><button type="button" class="am-btn am-btn-secondary" id="demo-settime">设置为当前时间</button></p>
 <script>
   $(function() {
-    $('.form-datetime').datetimepicker({
+    var $dpInput = $('.form-datetime').datetimepicker({
       format: 'yyyy-mm-dd hh:ii'
+    });
+
+    $('#demo-settime').on('click', function() {
+      $dpInput.datetimepicker('update', new Date());
     });
   });
 </script></div><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">size</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"2015-02-14 14:45"</span> <span class="hljs-attr">readonly</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-datetime am-form-field"</span>&gt;</span>
 
+<span class="hljs-tag">&lt;<span class="hljs-name">p</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"button"</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"am-btn am-btn-secondary"</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"demo-settime"</span>&gt;</span>设置为当前时间<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
 <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
-  $(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
-    $(<span class="hljs-string">'.form-datetime'</span>).datetimepicker({format: <span class="hljs-string">'yyyy-mm-dd hh:ii'</span>});
+$(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+  <span class="hljs-keyword">var</span> $dpInput = $(<span class="hljs-string">'.form-datetime'</span>).datetimepicker({
+    format: <span class="hljs-string">'yyyy-mm-dd hh:ii'</span>
   });
+
+  $(<span class="hljs-string">'#demo-settime'</span>).on(<span class="hljs-string">'click'</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+    $dpInput.datetimepicker(<span class="hljs-string">'update'</span>, <span class="hljs-keyword">new</span> <span class="hljs-built_in">Date</span>());
+  });
+});
 </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span></code></pre></div><h3><a name="she-zhi-yu-yan" class="anchor" href="#she-zhi-yu-yan"><span class="header-link"></span></a>设置语言</h3><div class="doc-example"><input size="16" type="text" value="2015-02-14 14:45" readonly class="form-datetime-lang am-form-field"></div><div class="doc-code demo-highlight"><pre><code class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">size</span>=<span class="hljs-string">"16"</span> <span class="hljs-attr">type</span>=<span class="hljs-string">"text"</span> <span class="hljs-attr">value</span>=<span class="hljs-string">"2015-02-14 14:45"</span> <span class="hljs-attr">readonly</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"form-datetime-lang am-form-field"</span>&gt;</span>
 
 <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
