@@ -8,12 +8,16 @@ title: Amaze UI Datetime Picker
 ### 默认 input
 
 `````html
-<input size="16" type="text" value="2015-02-14 14:45" readonly class="form-datetime am-form-field">
-
+<input size="16" type="text" value="2015-02-14 14:45" readonly class="form-datetime am-form-field" />
+<p><button type="button" class="am-btn am-btn-secondary" id="demo-settime">设置为当前时间</button></p>
 <script>
   $(function() {
-    $('.form-datetime').datetimepicker({
+    var $dpInput = $('.form-datetime').datetimepicker({
       format: 'yyyy-mm-dd hh:ii'
+    });
+
+    $('#demo-settime').on('click', function() {
+      $dpInput.datetimepicker('update', new Date());
     });
   });
 </script>
@@ -21,10 +25,17 @@ title: Amaze UI Datetime Picker
 ```html
 <input size="16" type="text" value="2015-02-14 14:45" readonly class="form-datetime am-form-field">
 
+<p><button type="button" class="am-btn am-btn-secondary" id="demo-settime">设置为当前时间</button></p>
 <script>
-  $(function() {
-    $('.form-datetime').datetimepicker({format: 'yyyy-mm-dd hh:ii'});
+$(function() {
+  var $dpInput = $('.form-datetime').datetimepicker({
+    format: 'yyyy-mm-dd hh:ii'
   });
+
+  $('#demo-settime').on('click', function() {
+    $dpInput.datetimepicker('update', new Date());
+  });
+});
 </script>
 ```
 
